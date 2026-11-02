@@ -1,0 +1,632 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/eyantra/TASK2B/Task_2/pl_riscv_cpu
+vadder
+Z1 !s110 1792924430
+!i10b 1
+!s100 ^[^_4a]0m_R76SZlKB`023
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7m5DYIVn[PDO^Ha1:`T9Q2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1792823945
+8code/components/adder.v
+Fcode/components/adder.v
+!i122 11
+L0 4 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1792924429.000000
+!s107 .test/tb.v|code/riscv_cpu.v|code/pl_riscv_cpu.v|code/instr_mem.v|code/data_mem.v|code/components/stage_memory.v|code/components/stage_fetch.v|code/components/stage_execute.v|code/components/stage_decode.v|code/components/reset_ff.v|code/components/reg_file.v|code/components/pl_reg_fd.v|code/components/pipe_mw.v|code/components/pipe_fd.v|code/components/pipe_em.v|code/components/pipe_de.v|code/components/mux4.v|code/components/mux3.v|code/components/mux2.v|code/components/main_decoder.v|code/components/imm_extend.v|code/components/hazard_unit.v|code/components/datapath.v|code/components/controller.v|code/components/branching_unit.v|code/components/alu_decoder.v|code/components/alu.v|code/components/adder.v|
+Z7 !s90 -reportprogress|300|-work|work|code/components/adder.v|code/components/alu.v|code/components/alu_decoder.v|code/components/branching_unit.v|code/components/controller.v|code/components/datapath.v|code/components/hazard_unit.v|code/components/imm_extend.v|code/components/main_decoder.v|code/components/mux2.v|code/components/mux3.v|code/components/mux4.v|code/components/pipe_de.v|code/components/pipe_em.v|code/components/pipe_fd.v|code/components/pipe_mw.v|code/components/pl_reg_fd.v|code/components/reg_file.v|code/components/reset_ff.v|code/components/stage_decode.v|code/components/stage_execute.v|code/components/stage_fetch.v|code/components/stage_memory.v|code/data_mem.v|code/instr_mem.v|code/pl_riscv_cpu.v|code/riscv_cpu.v|.test/tb.v|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 zjTFM5EoD4dg[]Db@88952
+R2
+I4:Z1`NPJAnY>VPj1@`fFN2
+R3
+R0
+R4
+8code/components/alu.v
+Fcode/components/alu.v
+!i122 11
+L0 3 39
+R5
+r1
+!s85 0
+31
+R6
+Z10 !s107 .test/tb.v|code/riscv_cpu.v|code/pl_riscv_cpu.v|code/instr_mem.v|code/data_mem.v|code/components/stage_memory.v|code/components/stage_fetch.v|code/components/stage_execute.v|code/components/stage_decode.v|code/components/reset_ff.v|code/components/reg_file.v|code/components/pl_reg_fd.v|code/components/pipe_mw.v|code/components/pipe_fd.v|code/components/pipe_em.v|code/components/pipe_de.v|code/components/mux4.v|code/components/mux3.v|code/components/mux2.v|code/components/main_decoder.v|code/components/imm_extend.v|code/components/hazard_unit.v|code/components/datapath.v|code/components/controller.v|code/components/branching_unit.v|code/components/alu_decoder.v|code/components/alu.v|code/components/adder.v|
+R7
+!i113 1
+R8
+R9
+valu_decoder
+R1
+!i10b 1
+!s100 EgDWcAmd:iRAVR@z^12?L0
+R2
+IRHD?ZfBE>XEkZD3IUbLNP3
+R3
+R0
+w1792912766
+8code/components/alu_decoder.v
+Fcode/components/alu_decoder.v
+!i122 11
+L0 3 47
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vbranching_unit
+R1
+!i10b 1
+!s100 9aIJ;CoJgoNZ2a8NeVJZi2
+R2
+IRN?1mfOgjm4gJQJJRUEj41
+R3
+R0
+w1792861406
+8code/components/branching_unit.v
+Fcode/components/branching_unit.v
+!i122 11
+L0 4 20
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vcontroller
+R1
+!i10b 1
+!s100 7TE?eWIejYKfK4NfJZaOm3
+R2
+I>O^8SzV9?YgLATc;]oCcz0
+R3
+R0
+R4
+8code/components/controller.v
+Fcode/components/controller.v
+!i122 11
+L0 4 46
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vdata_mem
+R1
+!i10b 1
+!s100 zjg[hFl[JGZFWAI;Eo^e_2
+R2
+IMcl^Kl6K_TLAP35_d`PL>3
+R3
+R0
+w1792924407
+8code/data_mem.v
+Fcode/data_mem.v
+!i122 11
+L0 6 102
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vdatapath
+R1
+!i10b 1
+!s100 X<oHh`Nhc^ll0NKbiHzeC1
+R2
+I8K4zaB@R6?CDGoKCCc`K02
+R3
+R0
+w1792920336
+8code/components/datapath.v
+Fcode/components/datapath.v
+!i122 11
+L0 4 348
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vhazard_unit
+R1
+!i10b 1
+!s100 Ra;aK;gVd26MX6]?_a[=61
+R2
+I^bioz_8n?GBTPoViGY>NK3
+R3
+R0
+w1792918884
+8code/components/hazard_unit.v
+Fcode/components/hazard_unit.v
+!i122 11
+L0 3 79
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vimm_extend
+R1
+!i10b 1
+!s100 g4P2a3goPc27?2F<[<X[z3
+R2
+IXZIV3CGWaRgd`jU>bCBAX2
+R3
+R0
+w1792861404
+8code/components/imm_extend.v
+Fcode/components/imm_extend.v
+!i122 11
+L0 3 26
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vinstr_mem
+R1
+!i10b 1
+!s100 @kE48Y>7I^5FEO5`0T6j90
+R2
+I^1Ob]lcNlIGXLUM[2]k4U2
+R3
+R0
+w1792919695
+8code/instr_mem.v
+Fcode/instr_mem.v
+!i122 11
+L0 4 17
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vmain_decoder
+R1
+!i10b 1
+!s100 C8<Lg15Rz6g9ZGS3j<^IS1
+R2
+I>[Z<aML;?>6be4A48Y[N<2
+R3
+R0
+R4
+8code/components/main_decoder.v
+Fcode/components/main_decoder.v
+!i122 11
+L0 4 149
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vmux2
+R1
+!i10b 1
+!s100 7mn9XNz05oSnKYb8e;@Pd2
+R2
+IfOH]48`LmmYbPNZQYhdO`2
+R3
+R0
+R4
+8code/components/mux2.v
+Fcode/components/mux2.v
+!i122 11
+Z11 L0 4 9
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vmux3
+R1
+!i10b 1
+!s100 _Kjl@K0@be;nV6DVGLVZD1
+R2
+IUM;k4[VXK8lNzL7z5Fn5H0
+R3
+R0
+R4
+8code/components/mux3.v
+Fcode/components/mux3.v
+!i122 11
+R11
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vmux4
+R1
+!i10b 1
+!s100 @>I[G6dYngh9XVB721jJ73
+R2
+IRU9OiN<SdWmQEH3UHa79@3
+R3
+R0
+R4
+8code/components/mux4.v
+Fcode/components/mux4.v
+!i122 11
+R11
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vpipe_de
+R1
+!i10b 1
+!s100 EQgSz7kzDT6[i]4obPWh51
+R2
+ILNSO4cXdCkZ8C:alAd6fW3
+R3
+R0
+w1792923929
+8code/components/pipe_de.v
+Fcode/components/pipe_de.v
+!i122 11
+L0 3 114
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vpipe_em
+R1
+!i10b 1
+!s100 XPIEGaQDVF]5GKdjD:6<E0
+R2
+I7jKF^?1K0OnWBJMiN`Y?61
+R3
+R0
+R4
+8code/components/pipe_em.v
+Fcode/components/pipe_em.v
+!i122 11
+Z12 L0 3 44
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vpipe_fd
+R1
+!i10b 1
+!s100 cM4@:lcaMHbnPGoHhARHM2
+R2
+Ik_N7bVTfW^aU6FSK68hW_1
+R3
+R0
+w1792913151
+8code/components/pipe_fd.v
+Fcode/components/pipe_fd.v
+!i122 11
+L0 3 42
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vpipe_mw
+R1
+!i10b 1
+!s100 GQ[=3NCB]cSmU;JJe8:8_2
+R2
+I0=o<:]8bbD2BEZaE=Wj1Y2
+R3
+R0
+w1792923013
+8code/components/pipe_mw.v
+Fcode/components/pipe_mw.v
+!i122 11
+R12
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vpl_riscv_cpu
+R1
+!i10b 1
+!s100 IKdKGTOmJUgBS4VEW]g900
+R2
+I;HWh@SgAHUV8P94;8?F<?2
+R3
+R0
+R4
+8code/pl_riscv_cpu.v
+Fcode/pl_riscv_cpu.v
+!i122 11
+L0 4 28
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vreg_file
+R1
+!i10b 1
+!s100 oXSogB^fYC0doV_ih48V22
+R2
+I`hnAH@bW8fRN^W5`PdJAY3
+R3
+R0
+w1792921707
+8code/components/reg_file.v
+Fcode/components/reg_file.v
+!i122 11
+L0 8 29
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vreset_ff
+R1
+!i10b 1
+!s100 RZPDkTj0AC9VU2YlRf2iF1
+R2
+IXe^<4M9JzSNzlcJZjY]ZQ3
+R3
+R0
+w1792861663
+8code/components/reset_ff.v
+Fcode/components/reset_ff.v
+!i122 11
+L0 4 16
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vriscv_cpu
+R1
+!i10b 1
+!s100 T=T:H>;^JPQH2PWDE0KFk3
+R2
+Im6Zo=m]f>OTKna5D==]I60
+R3
+R0
+w1792915513
+8code/riscv_cpu.v
+Fcode/riscv_cpu.v
+!i122 11
+L0 4 64
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vstage_decode
+R1
+!i10b 1
+!s100 HVW?M1j8955SViFVji[Am0
+R2
+I5KMCJ]FnU0C8;iNS8>2Z<2
+R3
+R0
+R4
+8code/components/stage_decode.v
+Fcode/components/stage_decode.v
+!i122 11
+L0 3 29
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vstage_execute
+R1
+!i10b 1
+!s100 Z1VXa?mgg[4FINiib]O_;1
+R2
+IjzZHEGlmTm_3ekIcFm?V41
+R3
+R0
+w1792913653
+8code/components/stage_execute.v
+Fcode/components/stage_execute.v
+!i122 11
+L0 2 80
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vstage_fetch
+R1
+!i10b 1
+!s100 Qgl0]QaBz6JbhlYFYh2BD1
+R2
+ISf5o=Qo3kC<BEjjF60hRD1
+R3
+R0
+R4
+8code/components/stage_fetch.v
+Fcode/components/stage_fetch.v
+!i122 11
+L0 3 30
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vstage_memory
+R1
+!i10b 1
+!s100 `CXQoA6m:IHD7cY?SG`AX3
+R2
+IicQfJKNdOO`C0AP:0OF6d1
+R3
+R0
+w1792924374
+8code/components/stage_memory.v
+Fcode/components/stage_memory.v
+!i122 11
+L0 3 64
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vtb
+R1
+!i10b 1
+!s100 QzVLn2A`CQh_<8^UAGDO91
+R2
+IMSEVh]d97k4@OV5ThG91>2
+R3
+R0
+R4
+8.test/tb.v
+F.test/tb.v
+!i122 11
+L0 3 521
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9

@@ -1,0 +1,532 @@
+Analysis & Elaboration report for pl_riscv_cpu
+Sun Oct 25 15:53:42 2026
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|mux2:pcmux
+  5. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|mux2:jalrmux
+  6. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|reset_ff:pcreg
+  7. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|adder:pcadd4
+  8. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_decode:decode|reg_file:rf
+  9. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|adder:pcaddbranch
+ 10. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:forwardAmux
+ 11. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:forwardBmux
+ 12. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:srcamux
+ 13. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux2:srcbmux
+ 14. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|alu:alu
+ 15. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|adder:auipcadder
+ 16. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux2:lauipcmux
+ 17. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux4:resultmuxM
+ 18. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux4:resultmux
+ 19. Parameter Settings for User Entity Instance: instr_mem:instrmem
+ 20. Parameter Settings for User Entity Instance: data_mem:datamem
+ 21. Analysis & Elaboration Settings
+ 22. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|pipe_mw:plmw"
+ 23. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:srcamux"
+ 24. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|stage_execute:execute"
+ 25. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|pipe_de:plde"
+ 26. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|adder:pcadd4"
+ 27. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|hazard_unit:hazard"
+ 28. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp"
+ 29. Analysis & Elaboration Messages
+ 30. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Sun Oct 25 15:53:41 2026       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; pl_riscv_cpu                                ;
+; Top-level Entity Name              ; pl_riscv_cpu                                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|mux2:pcmux ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|mux2:jalrmux ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|reset_ff:pcreg ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|adder:pcadd4 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_decode:decode|reg_file:rf ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|adder:pcaddbranch ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:forwardAmux ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:forwardBmux ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:srcamux ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux2:srcbmux ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|alu:alu ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|adder:auipcadder ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux2:lauipcmux ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux4:resultmuxM ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux4:resultmux ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: instr_mem:instrmem ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                         ;
+; ADDR_WIDTH     ; 32    ; Signed Integer                         ;
+; MEM_SIZE       ; 512   ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_mem:datamem ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                       ;
+; ADDR_WIDTH     ; 32    ; Signed Integer                       ;
+; MEM_SIZE       ; 64    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; pl_riscv_cpu       ; pl_riscv_cpu       ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|pipe_mw:plmw"                                              ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; funct3W ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:srcamux" ;
++------+-------+----------+------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                          ;
++------+-------+----------+------------------------------------------------------------------+
+; d2   ; Input ; Info     ; Stuck at GND                                                     ;
++------+-------+----------+------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|stage_execute:execute"                                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; lAuiPC ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|pipe_de:plde" ;
++------+-------+----------+--------------------------------------------+
+; Port ; Type  ; Severity ; Details                                    ;
++------+-------+----------+--------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                               ;
++------+-------+----------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|adder:pcadd4" ;
++----------+-------+----------+----------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                  ;
++----------+-------+----------+----------------------------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                                             ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                                             ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                                             ;
++----------+-------+----------+----------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|hazard_unit:hazard"                                               ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; localUseHazard ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp"                                                                  ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; InstrD[29..15] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; InstrD[11..7]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; InstrD[31]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sun Oct 25 15:53:32 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pl_riscv_cpu -c pl_riscv_cpu --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/hazard_unit.v
+    Info (12023): Found entity 1: hazard_unit File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/hazard_unit.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/stage_memory.v
+    Info (12023): Found entity 1: stage_memory File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/stage_fetch.v
+    Info (12023): Found entity 1: stage_fetch File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/stage_execute.v
+    Info (12023): Found entity 1: stage_execute File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/stage_decode.v
+    Info (12023): Found entity 1: stage_decode File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/pipe_mw.v
+    Info (12023): Found entity 1: pipe_mw File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_mw.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/pipe_fd.v
+    Info (12023): Found entity 1: pipe_fd File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_fd.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/pipe_em.v
+    Info (12023): Found entity 1: pipe_em File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_em.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/pipe_de.v
+    Info (12023): Found entity 1: pipe_de File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/pl_riscv_cpu.v
+    Info (12023): Found entity 1: pl_riscv_cpu File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/pl_riscv_cpu.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/riscv_cpu.v
+    Info (12023): Found entity 1: riscv_cpu File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/riscv_cpu.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/instr_mem.v
+    Info (12023): Found entity 1: instr_mem File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/instr_mem.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/data_mem.v
+    Info (12023): Found entity 1: data_mem File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/data_mem.v Line: 4
+Info (12021): Found 0 design units, including 0 entities, in source file code/components/pl_reg_fd.v
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/branching_unit.v
+    Info (12023): Found entity 1: branching_unit File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/branching_unit.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/reset_ff.v
+    Info (12023): Found entity 1: reset_ff File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/reset_ff.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/reg_file.v
+    Info (12023): Found entity 1: reg_file File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/reg_file.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/mux4.v
+    Info (12023): Found entity 1: mux4 File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/mux4.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/mux3.v
+    Info (12023): Found entity 1: mux3 File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/mux3.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/mux2.v
+    Info (12023): Found entity 1: mux2 File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/mux2.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/main_decoder.v
+    Info (12023): Found entity 1: main_decoder File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/main_decoder.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/imm_extend.v
+    Info (12023): Found entity 1: imm_extend File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/imm_extend.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/datapath.v
+    Info (12023): Found entity 1: datapath File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/controller.v
+    Info (12023): Found entity 1: controller File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/controller.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/alu_decoder.v
+    Info (12023): Found entity 1: alu_decoder File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/alu_decoder.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/alu.v
+    Info (12023): Found entity 1: alu File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/alu.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file code/components/adder.v
+    Info (12023): Found entity 1: adder File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/adder.v Line: 4
+Info (12127): Elaborating entity "pl_riscv_cpu" for the top level hierarchy
+Info (12128): Elaborating entity "riscv_cpu" for hierarchy "riscv_cpu:rvcpu" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/pl_riscv_cpu.v Line: 22
+Info (12128): Elaborating entity "controller" for hierarchy "riscv_cpu:rvcpu|controller:c" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/riscv_cpu.v Line: 37
+Info (12128): Elaborating entity "main_decoder" for hierarchy "riscv_cpu:rvcpu|controller:c|main_decoder:md" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/controller.v Line: 36
+Info (12128): Elaborating entity "alu_decoder" for hierarchy "riscv_cpu:rvcpu|controller:c|alu_decoder:ad" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/controller.v Line: 44
+Info (12128): Elaborating entity "datapath" for hierarchy "riscv_cpu:rvcpu|datapath:dp" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/riscv_cpu.v Line: 65
+Info (12128): Elaborating entity "hazard_unit" for hierarchy "riscv_cpu:rvcpu|datapath:dp|hazard_unit:hazard" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 122
+Info (12128): Elaborating entity "stage_fetch" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 138
+Info (12128): Elaborating entity "mux2" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|mux2:pcmux" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v Line: 18
+Info (12128): Elaborating entity "reset_ff" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|reset_ff:pcreg" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v Line: 28
+Info (12128): Elaborating entity "adder" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_fetch:fetch|adder:pcadd4" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v Line: 30
+Info (12128): Elaborating entity "pipe_fd" for hierarchy "riscv_cpu:rvcpu|datapath:dp|pipe_fd:plfd" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 153
+Info (12128): Elaborating entity "stage_decode" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_decode:decode" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 170
+Info (12128): Elaborating entity "reg_file" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_decode:decode|reg_file:rf" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v Line: 27
+Info (12128): Elaborating entity "imm_extend" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_decode:decode|imm_extend:ext" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v Line: 29
+Info (12128): Elaborating entity "pipe_de" for hierarchy "riscv_cpu:rvcpu|datapath:dp|pipe_de:plde" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 224
+Info (12128): Elaborating entity "stage_execute" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_execute:execute" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 255
+Info (12128): Elaborating entity "mux3" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|mux3:forwardAmux" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v Line: 47
+Info (12128): Elaborating entity "alu" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_execute:execute|alu:alu" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v Line: 64
+Info (12128): Elaborating entity "pipe_em" for hierarchy "riscv_cpu:rvcpu|datapath:dp|pipe_em:plem" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 281
+Info (12128): Elaborating entity "stage_memory" for hierarchy "riscv_cpu:rvcpu|datapath:dp|stage_memory:memory" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 295
+Warning (10036): Verilog HDL or VHDL warning at stage_memory.v(15): object "formatted_read" assigned a value but never read File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v Line: 15
+Warning (10036): Verilog HDL or VHDL warning at stage_memory.v(51): object "WriteData_aligned" assigned a value but never read File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v Line: 51
+Info (12128): Elaborating entity "pipe_mw" for hierarchy "riscv_cpu:rvcpu|datapath:dp|pipe_mw:plmw" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 317
+Info (12128): Elaborating entity "mux4" for hierarchy "riscv_cpu:rvcpu|datapath:dp|mux4:resultmuxM" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/datapath.v Line: 330
+Info (12128): Elaborating entity "instr_mem" for hierarchy "instr_mem:instrmem" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/pl_riscv_cpu.v Line: 23
+Warning (10850): Verilog HDL warning at instr_mem.v(13): number of words (79) in memory file does not match the number of elements in the address range [0:511] File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/instr_mem.v Line: 13
+Warning (10030): Net "instr_ram.data_a" at instr_mem.v(10) has no driver or initial value, using a default initial value '0' File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/instr_mem.v Line: 10
+Warning (10030): Net "instr_ram.waddr_a" at instr_mem.v(10) has no driver or initial value, using a default initial value '0' File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/instr_mem.v Line: 10
+Warning (10030): Net "instr_ram.we_a" at instr_mem.v(10) has no driver or initial value, using a default initial value '0' File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/instr_mem.v Line: 10
+Info (12128): Elaborating entity "data_mem" for hierarchy "data_mem:datamem" File: C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/pl_riscv_cpu.v Line: 24
+Info (144001): Generated suppressed messages file C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/output_files/pl_riscv_cpu.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4729 megabytes
+    Info: Processing ended: Sun Oct 25 15:53:42 2026
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:26
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/output_files/pl_riscv_cpu.map.smsg.
+
+

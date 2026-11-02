@@ -1,0 +1,661 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do pl_riscv_cpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/hazard_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:45 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/hazard_unit.v 
+# -- Compiling module hazard_unit
+# 
+# Top level modules:
+# 	hazard_unit
+# End time: 15:53:45 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:45 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v 
+# -- Compiling module stage_memory
+# 
+# Top level modules:
+# 	stage_memory
+# End time: 15:53:45 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:46 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v 
+# -- Compiling module stage_fetch
+# 
+# Top level modules:
+# 	stage_fetch
+# End time: 15:53:46 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:46 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v 
+# -- Compiling module stage_execute
+# 
+# Top level modules:
+# 	stage_execute
+# End time: 15:53:46 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:46 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v 
+# -- Compiling module stage_decode
+# 
+# Top level modules:
+# 	stage_decode
+# End time: 15:53:46 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_mw.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:46 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_mw.v 
+# -- Compiling module pipe_mw
+# 
+# Top level modules:
+# 	pipe_mw
+# End time: 15:53:46 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_fd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:46 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_fd.v 
+# -- Compiling module pipe_fd
+# 
+# Top level modules:
+# 	pipe_fd
+# End time: 15:53:46 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_em.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:46 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_em.v 
+# -- Compiling module pipe_em
+# 
+# Top level modules:
+# 	pipe_em
+# End time: 15:53:46 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:46 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components" C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v 
+# -- Compiling module pipe_de
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(9): (vlog-2892) Net type of 'RD1D' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(9): (vlog-2892) Net type of 'RD2D' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(10): (vlog-2892) Net type of 'ImmExtD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(12): (vlog-2892) Net type of 'PCD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(12): (vlog-2892) Net type of 'PCPlus4D' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(16): (vlog-2892) Net type of 'Rs1D' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(16): (vlog-2892) Net type of 'Rs2D' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(16): (vlog-2892) Net type of 'RdD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(17): (vlog-2892) Net type of 'funct3D' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(22): (vlog-2892) Net type of 'ResultSrcD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(25): (vlog-2892) Net type of 'ALUControlD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(27): (vlog-2892) Net type of 'ASrcD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(37): (vlog-2892) Net type of 'InstrD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(5): (vlog-2892) Net type of 'clk' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(5): (vlog-2892) Net type of 'en' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(5): (vlog-2892) Net type of 'clr' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(21): (vlog-2892) Net type of 'RegWriteD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(23): (vlog-2892) Net type of 'MemWriteD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(24): (vlog-2892) Net type of 'BranchD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(24): (vlog-2892) Net type of 'JumpD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(24): (vlog-2892) Net type of 'JalrD' was not explicitly declared.
+# ** Error (suppressible): C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_de.v(26): (vlog-2892) Net type of 'ALUSrcD' was not explicitly declared.
+# End time: 15:53:46 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 22, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./pl_riscv_cpu_run_msim_rtl_verilog.do line 16
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components {C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pip..."
+vlog -vlog01compat -work work code/components/pipe_de.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:12 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work code/components/pipe_de.v 
+# ** Error: (vlog-7) Failed to open design unit file "code/components/pipe_de.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 15:56:12 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work code/components/pipe_de.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:23 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work code/components/pipe_de.v 
+# ** Error: (vlog-7) Failed to open design unit file "code/components/pipe_de.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 15:56:23 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work code/components/pipe_de.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:28 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work code/components/pipe_de.v 
+# ** Error: (vlog-7) Failed to open design unit file "code/components/pipe_de.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 15:56:28 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+cd C:/eyantra/TASK2B/Task_2/pl_riscv_cpu
+# reading modelsim.ini
+pwd
+# C:/eyantra/TASK2B/Task_2/pl_riscv_cpu
+file exists code/components/pipe_de.v
+# 1
+vlog -vlog01compat -work work code/components/pipe_de.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:57:06 on Oct 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work code/components/pipe_de.v 
+# -- Compiling module pipe_de
+# 
+# Top level modules:
+# 	pipe_de
+# End time: 15:57:06 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+eval vlog -work work [glob code/components/*.v] [glob code/*.v] .test/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:57:40 on Oct 25,2026
+# vlog -reportprogress 300 -work work code/components/adder.v code/components/alu.v code/components/alu_decoder.v code/components/branching_unit.v code/components/controller.v code/components/datapath.v code/components/hazard_unit.v code/components/imm_extend.v code/components/main_decoder.v code/components/mux2.v code/components/mux3.v code/components/mux4.v code/components/pipe_de.v code/components/pipe_em.v code/components/pipe_fd.v code/components/pipe_mw.v code/components/pl_reg_fd.v code/components/reg_file.v code/components/reset_ff.v code/components/stage_decode.v code/components/stage_execute.v code/components/stage_fetch.v code/components/stage_memory.v code/data_mem.v code/instr_mem.v code/pl_riscv_cpu.v code/riscv_cpu.v .test/tb.v 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_decoder
+# -- Compiling module branching_unit
+# -- Compiling module controller
+# -- Compiling module datapath
+# -- Compiling module hazard_unit
+# -- Compiling module imm_extend
+# -- Compiling module main_decoder
+# -- Compiling module mux2
+# -- Compiling module mux3
+# -- Compiling module mux4
+# -- Compiling module pipe_de
+# -- Compiling module pipe_em
+# -- Compiling module pipe_fd
+# -- Compiling module pipe_mw
+# -- Compiling module reg_file
+# -- Compiling module reset_ff
+# -- Compiling module stage_decode
+# -- Compiling module stage_execute
+# -- Compiling module stage_fetch
+# -- Compiling module stage_memory
+# -- Compiling module data_mem
+# ** Error (suppressible): code/data_mem.v(6): (vlog-2892) Net type of 'funct3' was not explicitly declared.
+# ** Error (suppressible): code/data_mem.v(7): (vlog-2892) Net type of 'wr_addr' was not explicitly declared.
+# ** Error (suppressible): code/data_mem.v(7): (vlog-2892) Net type of 'wr_data' was not explicitly declared.
+# ** Error (suppressible): code/data_mem.v(5): (vlog-2892) Net type of 'clk' was not explicitly declared.
+# ** Error (suppressible): code/data_mem.v(5): (vlog-2892) Net type of 'wr_en' was not explicitly declared.
+# -- Compiling module instr_mem
+# ** Error (suppressible): code/instr_mem.v(5): (vlog-2892) Net type of 'instr_addr' was not explicitly declared.
+# ** Error (suppressible): code/instr_mem.v(6): (vlog-2892) Net type of 'instr' was not explicitly declared.
+# -- Compiling module pl_riscv_cpu
+# ** Error (suppressible): code/pl_riscv_cpu.v(7): (vlog-2892) Net type of 'Ext_WriteData' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(7): (vlog-2892) Net type of 'Ext_DataAdr' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(9): (vlog-2892) Net type of 'WriteData' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(9): (vlog-2892) Net type of 'DataAdr' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(9): (vlog-2892) Net type of 'ReadData' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(10): (vlog-2892) Net type of 'PCW' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(10): (vlog-2892) Net type of 'Result' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(10): (vlog-2892) Net type of 'ALUResultW' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(10): (vlog-2892) Net type of 'WriteDataW' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(5): (vlog-2892) Net type of 'clk' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(5): (vlog-2892) Net type of 'reset' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(6): (vlog-2892) Net type of 'Ext_MemWrite' was not explicitly declared.
+# ** Error (suppressible): code/pl_riscv_cpu.v(8): (vlog-2892) Net type of 'MemWrite' was not explicitly declared.
+# -- Compiling module riscv_cpu
+# ** Error (suppressible): code/riscv_cpu.v(6): (vlog-2892) Net type of 'PC' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(7): (vlog-2892) Net type of 'Instr' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(9): (vlog-2892) Net type of 'Mem_WrAddr' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(9): (vlog-2892) Net type of 'Mem_WrData' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(10): (vlog-2892) Net type of 'ReadData' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(11): (vlog-2892) Net type of 'Result' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(12): (vlog-2892) Net type of 'funct3' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(13): (vlog-2892) Net type of 'PCW' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(13): (vlog-2892) Net type of 'ALUResultW' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(13): (vlog-2892) Net type of 'WriteDataW' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(5): (vlog-2892) Net type of 'clk' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(5): (vlog-2892) Net type of 'reset' was not explicitly declared.
+# ** Error (suppressible): code/riscv_cpu.v(8): (vlog-2892) Net type of 'MemWrite' was not explicitly declared.
+# -- Compiling module tb
+# End time: 15:57:40 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 33, Warnings: 0
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L work -voptargs="+acc" work.tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L work -voptargs=""+acc"" work.tb 
+# Start time: 15:57:48 on Oct 25,2026
+# Loading work.tb
+# Loading work.pl_riscv_cpu
+# Loading work.riscv_cpu
+# Loading work.controller
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.datapath
+# Loading work.hazard_unit
+# Loading work.stage_fetch
+# Loading work.mux2
+# Loading work.reset_ff
+# Loading work.adder
+# Loading work.pipe_fd
+# Loading work.stage_decode
+# Loading work.reg_file
+# Loading work.imm_extend
+# Loading work.pipe_de
+# Loading work.stage_execute
+# Loading work.mux3
+# Loading work.alu
+# Loading work.pipe_em
+# Loading work.stage_memory
+# Loading work.pipe_mw
+# Loading work.mux4
+# Loading work.instr_mem
+# Loading work.data_mem
+# WARNING: No extended dataflow license exists
+run 5000 ns
+# 1. addi implementation is correct for x0 
+# 2. addi implementation is correct 
+# 3. slli implementation is correct 
+# 4. slti implementation is correct 
+# 5. sltiu implementation is correct 
+# 6. xori implementation is correct 
+# 7. srli implementation is correct 
+# 8. srai implementation is correct 
+# 9. ori implementation is correct 
+# 10. andi implementation is correct
+# 11. add implementation is correct 
+# 12. sub implementation is correct 
+# 13. sll implementation is correct 
+# 14. slt implementation is correct 
+# 15. sltu implementation is correct 
+# 16. xor implementation is correct 
+# 17. srl implementation is correct 
+# 18. sra implementation is correct 
+# 19. or implementation is correct 
+# 20. and implementation is correct 
+# 21. lui implementation is correct 
+# 22. auipc implementation is correct 
+# 23. sb implementation is correct
+# 24. sh implementation is correct
+# 25. sw implementation is correct
+# 26. lb implementation is correct
+# 27. lh implementation is incorrect
+# 28. lw implementation is correct
+# 29. lbu implementation is correct
+# 30. lhu implementation is incorrect
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt implementation is correct 
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge implementation is correct
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu implementation is correct 
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu implementation is correct 
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne implementation is correct 
+# 36. beq is executing
+# 36. beq is executing
+# 36. beq implementation is correct 
+# 37. jalr implementation is correct 
+# 38. jal implementation is correct 
+# Faulty Instructions =>           2
+# Error(s) encountered, please check your design!
+# ** Note: $stop    : .test/tb.v(513)
+#    Time: 2385 ns  Iteration: 1  Instance: /tb
+# Break in Module tb at .test/tb.v line 513
+cd C:/eyantra/TASK2B/Task_2/pl_riscv_cpu
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+
+eval vlog -work work [glob code/components/*.v] [glob code/*.v] .test/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:03:49 on Oct 25,2026
+# vlog -reportprogress 300 -work work code/components/adder.v code/components/alu.v code/components/alu_decoder.v code/components/branching_unit.v code/components/controller.v code/components/datapath.v code/components/hazard_unit.v code/components/imm_extend.v code/components/main_decoder.v code/components/mux2.v code/components/mux3.v code/components/mux4.v code/components/pipe_de.v code/components/pipe_em.v code/components/pipe_fd.v code/components/pipe_mw.v code/components/pl_reg_fd.v code/components/reg_file.v code/components/reset_ff.v code/components/stage_decode.v code/components/stage_execute.v code/components/stage_fetch.v code/components/stage_memory.v code/data_mem.v code/instr_mem.v code/pl_riscv_cpu.v code/riscv_cpu.v .test/tb.v 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_decoder
+# -- Compiling module branching_unit
+# -- Compiling module controller
+# -- Compiling module datapath
+# -- Compiling module hazard_unit
+# -- Compiling module imm_extend
+# -- Compiling module main_decoder
+# -- Compiling module mux2
+# -- Compiling module mux3
+# -- Compiling module mux4
+# -- Compiling module pipe_de
+# -- Compiling module pipe_em
+# -- Compiling module pipe_fd
+# -- Compiling module pipe_mw
+# -- Compiling module reg_file
+# -- Compiling module reset_ff
+# -- Compiling module stage_decode
+# -- Compiling module stage_execute
+# -- Compiling module stage_fetch
+# -- Compiling module stage_memory
+# -- Compiling module data_mem
+# -- Compiling module instr_mem
+# -- Compiling module pl_riscv_cpu
+# -- Compiling module riscv_cpu
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	branching_unit
+# 	tb
+# End time: 16:03:50 on Oct 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+quit -sim
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L work -voptargs="+acc" work.tb
+# End time: 16:04:02 on Oct 25,2026, Elapsed time: 0:06:14
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L work -voptargs=""+acc"" work.tb 
+# Start time: 16:04:02 on Oct 25,2026
+# Loading work.tb
+# Loading work.pl_riscv_cpu
+# Loading work.riscv_cpu
+# Loading work.controller
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.datapath
+# Loading work.hazard_unit
+# Loading work.stage_fetch
+# Loading work.mux2
+# Loading work.reset_ff
+# Loading work.adder
+# Loading work.pipe_fd
+# Loading work.stage_decode
+# Loading work.reg_file
+# Loading work.imm_extend
+# Loading work.pipe_de
+# Loading work.stage_execute
+# Loading work.mux3
+# Loading work.alu
+# Loading work.pipe_em
+# Loading work.stage_memory
+# Loading work.pipe_mw
+# Loading work.mux4
+# Loading work.instr_mem
+# Loading work.data_mem
+
+run 5000 ns
+# 1. addi implementation is correct for x0 
+# 2. addi implementation is correct 
+# 3. slli implementation is correct 
+# 4. slti implementation is correct 
+# 5. sltiu implementation is correct 
+# 6. xori implementation is correct 
+# 7. srli implementation is correct 
+# 8. srai implementation is correct 
+# 9. ori implementation is correct 
+# 10. andi implementation is correct
+# 11. add implementation is correct 
+# 12. sub implementation is correct 
+# 13. sll implementation is correct 
+# 14. slt implementation is correct 
+# 15. sltu implementation is correct 
+# 16. xor implementation is correct 
+# 17. srl implementation is correct 
+# 18. sra implementation is correct 
+# 19. or implementation is correct 
+# 20. and implementation is correct 
+# 21. lui implementation is correct 
+# 22. auipc implementation is correct 
+# 23. sb implementation is correct
+# 24. sh implementation is correct
+# 25. sw implementation is correct
+# 26. lb implementation is correct
+# 27. lh implementation is correct
+# 28. lw implementation is correct
+# 29. lbu implementation is correct
+# 30. lhu implementation is correct
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt implementation is correct 
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge implementation is correct
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu implementation is correct 
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu implementation is correct 
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne implementation is correct 
+# 36. beq is executing
+# 36. beq is executing
+# 36. beq implementation is correct 
+# 37. jalr implementation is correct 
+# 38. jal implementation is correct 
+# Faulty Instructions =>           0
+# No errors encountered, congratulations!
+# ** Note: $stop    : .test/tb.v(513)
+#    Time: 2385 ns  Iteration: 1  Instance: /tb
+# Break in Module tb at .test/tb.v line 513
+restart -f
+run alll
+# Invalid time value: alll
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# 1. addi implementation is correct for x0 
+# 2. addi implementation is correct 
+# 3. slli implementation is correct 
+# 4. slti implementation is correct 
+# 5. sltiu implementation is correct 
+# 6. xori implementation is correct 
+# 7. srli implementation is correct 
+# 8. srai implementation is correct 
+# 9. ori implementation is correct 
+# 10. andi implementation is correct
+# 11. add implementation is correct 
+# 12. sub implementation is correct 
+# 13. sll implementation is correct 
+# 14. slt implementation is correct 
+# 15. sltu implementation is correct 
+# 16. xor implementation is correct 
+# 17. srl implementation is correct 
+# 18. sra implementation is correct 
+# 19. or implementation is correct 
+# 20. and implementation is correct 
+# 21. lui implementation is correct 
+# 22. auipc implementation is correct 
+# 23. sb implementation is correct
+# 24. sh implementation is correct
+# 25. sw implementation is correct
+# 26. lb implementation is correct
+# 27. lh implementation is correct
+# 28. lw implementation is correct
+# 29. lbu implementation is correct
+# 30. lhu implementation is correct
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt implementation is correct 
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge implementation is correct
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu is executing
+# 33. bltu implementation is correct 
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu is executing
+# 34. bgeu implementation is correct 
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne is executing
+# 35. bne implementation is correct 
+# 36. beq is executing
+# 36. beq is executing
+# 36. beq implementation is correct 
+# 37. jalr implementation is correct 
+# 38. jal implementation is correct 
+# Faulty Instructions =>           0
+# No errors encountered, congratulations!
+# ** Note: $stop    : .test/tb.v(513)
+#    Time: 2385 ns  Iteration: 1  Instance: /tb
+# Break in Module tb at .test/tb.v line 513
+# Load canceled
+add wave -radix hexadecimal sim:/tb/uut/PCW
+add wave -radix hexadecimal sim:/tb/uut/Result
+
+add wave -radix hexadecimal sim:/tb/uut/rvcpu/dp/PCPlus4W
+add wave -radix hexadecimal sim:/tb/uut/rvcpu/dp/ALUResultW
+add wave -radix hexadecimal sim:/tb/uut/rvcpu/dp/ReadDataW
+add wave -radix binary sim:/tb/uut/rvcpu/dp/ResultSrcW
+
+restart -f
+run 500ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# 1. addi implementation is correct for x0 
+# 2. addi implementation is correct 
+# 3. slli implementation is correct 
+# 4. slti implementation is correct 
+# 5. sltiu implementation is correct 
+# 6. xori implementation is correct 
+# 7. srli implementation is correct 
+# 8. srai implementation is correct 
+# 9. ori implementation is correct 
+# 10. andi implementation is correct
+# 11. add implementation is correct 
+# 12. sub implementation is correct 
+# 13. sll implementation is correct 
+# 14. slt implementation is correct 
+# 15. sltu implementation is correct 
+# 16. xor implementation is correct 
+# 17. srl implementation is correct 
+# 18. sra implementation is correct 
+# 19. or implementation is correct 
+# 20. and implementation is correct 
+# 21. lui implementation is correct 
+# 22. auipc implementation is correct 
+# 23. sb implementation is correct
+# 24. sh implementation is correct
+# 25. sw implementation is correct
+# 26. lb implementation is correct
+# 27. lh implementation is correct
+# 28. lw implementation is correct
+# 29. lbu implementation is correct
+# 30. lhu implementation is correct
+# 31. blt is executing
+# 31. blt is executing
+run 1000ns
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt is executing
+# 31. blt implementation is correct 
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge is executing
+# 32. bge implementation is correct
+# 33. bltu is executing
+# End time: 16:20:23 on Oct 25,2026, Elapsed time: 0:16:21
+# Errors: 0, Warnings: 0

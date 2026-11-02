@@ -1,0 +1,203 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/simulation/modelsim
+vhazard_unit
+Z1 !s110 1792923825
+!i10b 1
+!s100 zle?b>fco2`I1m@mhhXZ03
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZ?ezE1Vd`<ho92PQFmYie3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1792918884
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/hazard_unit.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/hazard_unit.v
+!i122 0
+L0 3 79
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1792923825.000000
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/hazard_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/hazard_unit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components
+Z8 tCvgOpt 0
+vpipe_em
+Z9 !s110 1792923826
+!i10b 1
+!s100 V`>dLgWDSamQ<F`=_S[Q=0
+R2
+I;c8^n9fD=c99_GG`566Sg3
+R3
+R0
+Z10 w1792823945
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_em.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_em.v
+!i122 7
+Z11 L0 3 44
+R4
+r1
+!s85 0
+31
+Z12 !s108 1792923826.000000
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_em.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_em.v|
+!i113 1
+R6
+R7
+R8
+vpipe_fd
+R9
+!i10b 1
+!s100 JO2ZBjl:AH><69WAJG?PT2
+R2
+IA6V_eC;[jI7md3R=b:H2_1
+R3
+R0
+w1792913151
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_fd.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_fd.v
+!i122 6
+L0 3 42
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_fd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_fd.v|
+!i113 1
+R6
+R7
+R8
+vpipe_mw
+R9
+!i10b 1
+!s100 1PT_52PM_N>b]_o?hz4`f2
+R2
+IFC7HHzkFF_Xi:1AjLmJ7M0
+R3
+R0
+w1792923013
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_mw.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_mw.v
+!i122 5
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_mw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/pipe_mw.v|
+!i113 1
+R6
+R7
+R8
+vstage_decode
+R9
+!i10b 1
+!s100 2ThEWR5k7Ho5ANJoBU7>k3
+R2
+Iz<hfI2fza?M^XJ:B_U1B^3
+R3
+R0
+R10
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v
+!i122 4
+L0 3 29
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_decode.v|
+!i113 1
+R6
+R7
+R8
+vstage_execute
+R9
+!i10b 1
+!s100 [7ihGcga@lDfAO?i4Hn8[1
+R2
+IBPPFUnN8H8j5`H:fAnN0j1
+R3
+R0
+w1792913653
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v
+!i122 3
+L0 2 80
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_execute.v|
+!i113 1
+R6
+R7
+R8
+vstage_fetch
+R9
+!i10b 1
+!s100 4iXO]ombh1hcUYQQLFm6@2
+R2
+I];TRDAY9CZI]2fZfhB8ll1
+R3
+R0
+R10
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v
+!i122 2
+L0 3 30
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_fetch.v|
+!i113 1
+R6
+R7
+R8
+vstage_memory
+R1
+!i10b 1
+!s100 2_DC4gXCT467POk5jCQHK3
+R2
+IAV36?;Tg8`n?f^AHB`ZOA2
+R3
+R0
+R10
+8C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v
+FC:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v
+!i122 1
+L0 3 64
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components|C:/eyantra/TASK2B/Task_2/pl_riscv_cpu/code/components/stage_memory.v|
+!i113 1
+R6
+R7
+R8
