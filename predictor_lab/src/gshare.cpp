@@ -1,55 +1,62 @@
 #include "gshare.h"
 
-GsharePredictor::GsharePredictor()
-{
-    counters.fill(1);
+#include <stdexcept>
 
+GsharePredictor::GsharePredictor() {
+    // Match Bimodal's starting counter state for a fair comparison.
+    counters.fill(1);
     globalHistory = 0;
 }
 
-std::size_t GsharePredictor::getIndex(uint32_t branchPC) const
-{
-    uint32_t pcIndex = (branchPC >> 2) & HISTORY_MASK;
+std::size_t GsharePredictor::getIndex(std::uint32_t branchPC) const {
+    const std::uint32_t pcIndex =
+        static_cast<std::uint32_t>((branchPC >> 2) & HISTORY_MASK);
 
-    return static_cast<std::size_t>(
-        pcIndex ^ globalHistory
-    );
+    // Gshare combines the PC index with recent global branch outcomes.
+    return static_cast<std::size_t>(pcIndex ^ globalHistory);
 }
 
-bool GsharePredictor::predict(uint32_t branchPC) const
-{
-    std::size_t index = getIndex(branchPC);
-
-    uint8_t counter = counters[index];
-
+bool GsharePredictor::predict(std::uint32_t branchPC) const {
+    const std::uint8_t counter = counters[getIndex(branchPC)];
     return counter >= 2;
 }
 
-void GsharePredictor::update(
-    uint32_t branchPC,
-    bool actualOutcome
-)
-{
-    // 1. Find the counter using the current history.
-    std::size_t index = getIndex(branchPC);
+void GsharePredictor::update(std::uint32_t branchPC, bool actualOutcome) {
+    // IMPORTANT: calculate the table index before modifying the GHR.
+    const std::size_t index = getIndex(branchPC);
+    std::uint8_t& counter = counters[index];
 
-    uint8_t& counter = counters[index];
-
-    // 2. Update the selected saturating counter.
-    if (actualOutcome)
-    {
-        if (counter < 3)
-            counter++;
-    }
-    else
-    {
-        if (counter > 0)
-            counter--;
+    if (actualOutcome) {
+        if (counter < 3) {
+            ++counter;
+        }
+    } else {
+        if (counter > 0) {
+            --counter;
+        }
     }
 
-    // 3. Shift in the actual branch outcome.
-    globalHistory = static_cast<uint8_t>(
-        ((globalHistory << 1) |
-        (actualOutcome ? 1u : 0u)) & HISTORY_MASK
+    // Shift left, insert the newest outcome into bit 0, keep four history bits.
+    globalHistory = static_cast<std::uint8_t>(
+        ((globalHistory << 1) | (actualOutcome ? 1u : 0u)) & HISTORY_MASK
     );
+}
+
+std::uint8_t GsharePredictor::getGlobalHistory() const {
+    return globalHistory;
+}
+
+std::size_t GsharePredictor::debugPCIndex(std::uint32_t branchPC) const {
+    return static_cast<std::size_t>((branchPC >> 2) & HISTORY_MASK);
+}
+
+std::size_t GsharePredictor::debugIndex(std::uint32_t branchPC) const {
+    return getIndex(branchPC);
+}
+
+std::uint8_t GsharePredictor::debugCounterAt(std::size_t index) const {
+    if (index >= TABLE_SIZE) {
+        throw std::out_of_range("Gshare counter index is out of range");
+    }
+    return counters[index];
 }
